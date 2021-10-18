@@ -5,10 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import { GlobalStyles } from "./global-styles";
 import { FirebaseContext } from "./context/firebase";
 
-const config = {
-  apiKey: "",
-}
-
 
 ReactDOM.render(
   <React.StrictMode>
