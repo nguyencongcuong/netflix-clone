@@ -4,7 +4,7 @@ import {
 	Switch,
 } from "react-router-dom";
 import { Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { Home, Signin, Signup } from "./pages";
 import * as ROUTES from "./constants/routes";
 
 export default function App() {
@@ -15,10 +15,10 @@ export default function App() {
 					<Home />
 				</Route>
 				<Route path={ROUTES.SIGN_IN}>
-					<p>I will be the sign in page</p>
+					<Signin />
 				</Route>
 				<Route path={ROUTES.SIGN_UP}>
-					<p>I will be the sign up page</p>
+					<Signup />
 				</Route>
 				<Route path={ROUTES.BROWSE}>
 					<div className="" style={{ color: "white" }}>
