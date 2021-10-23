@@ -26,28 +26,17 @@ export default function Signup() {
 		createUserWithEmailAndPassword(auth, emailAddress, password)
 			.then((userCredential) => {
 				// Signed in
-				const user = userCredential.user;
-				return user
-				// ...
-				// user.updateProfile({
-				// 	displayName: firstName,
-				// 	photoURL: Math.floor(Math.random() * 5) + 1
-				// })
-				
-				// Reset form
+				return userCredential.user;
 
 			})
-			.then((user) => {
+			.then(() => {
 				history.push(ROUTES.BROWSE)
 			})
 			.catch((error) => {
 				setEmailAddress('');
 				setPassword('');
-				const errorCode = error.code;
-				const errorMessage = error.message;
-				// ..
-				console.log(errorCode)
-				console.log(errorMessage)
+				setError(error)
+				console.log(error)
 			});
 	};
 
