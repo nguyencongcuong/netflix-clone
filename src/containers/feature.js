@@ -1,6 +1,6 @@
 import React from 'react'
 import { Feature } from '../components'
-export default function FeatureContainer() {
+export function FeatureContainer() {
   return (
     <Feature>
       <Feature.Title>

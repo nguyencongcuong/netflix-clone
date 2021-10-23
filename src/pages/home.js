@@ -1,10 +1,10 @@
 import React from "react";
-import JumbotronContainer from "../containers/jumbotron";
-import FooterContainer from "../containers/footer";
-import FaqsContainer from "../containers/faqs";
-import HeaderContainer from "../containers/header";
+import {JumbotronContainer} from "../containers/jumbotron";
+import {FooterContainer} from "../containers/footer";
+import {FaqsContainer} from "../containers/faqs";
+import {HeaderContainer} from "../containers/header";
 import { OptForm } from "../components";
-import FeatureContainer from "../containers/feature";
+import {FeatureContainer} from "../containers/feature";
 import { VscChevronRight } from "react-icons/vsc";
 
 export default function Home() {

@@ -3,7 +3,7 @@ import { Accordion, OptForm } from "../components";
 import faqsData from "../fixtures/faqs.json";
 import { VscChevronRight } from "react-icons/vsc";
 
-export default function FaqsContainer() {
+export function FaqsContainer() {
 	return (
 		<Accordion>
 			<Accordion.Title>

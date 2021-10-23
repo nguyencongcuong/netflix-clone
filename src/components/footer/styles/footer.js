@@ -40,7 +40,7 @@ export const Text = styled.p`
   margin-bottom: 2rem;
 `;
 
-export const Break = styled.hr`
+export const Break = styled.div`
 	flex-basis: 100%;
-	height: 10px;
+	height: 0;
 `;
