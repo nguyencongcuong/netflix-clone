@@ -3,7 +3,6 @@ import {
 	BrowserRouter as Router,
 	Switch,
 } from "react-router-dom";
-import { Route } from "react-router-dom";
 import { Home, Signin, Signup, Browse } from "./pages";
 import * as ROUTES from "./constants/routes";
 
@@ -17,7 +16,7 @@ export default function App() {
 		<Router>
 			<Switch>
 				
-				<IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME} exact path={ROUTES.HOME}>
+				<IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} exact path={ROUTES.HOME}>
 					<Home />
 				</IsUserRedirect>
 				
